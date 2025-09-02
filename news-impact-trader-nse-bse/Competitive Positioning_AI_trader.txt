@@ -1,0 +1,59 @@
+Competitive Positioning PPT (Content)
+
+Slide 1 – Title
+
+Competitive Landscape & Market Positioning
+
+News Impact Trader AI vs Global Players
+
+Slide 2 – Current Competitive Landscape
+
+AlphaSense → AI-powered search & alerts (Institutional focus)
+
+Sentifi → Crowd-sourced social/news analytics (Retail & institutional)
+
+Accern → NLP-based news ingestion & event detection (Hedge funds, asset managers)
+
+News Impact Trader AI → Real-time news + sentiment + TA alerts (Retail & institutional)
+
+Slide 3 – Gaps in the Market
+
+Limited India/NSE/BSE coverage
+
+No TA integration with NLP sentiment
+
+Lack of explainability for alerts
+
+Expensive, mostly institutional solutions
+
+Slide 4 – Our Differentiators
+
+🇮🇳 India-first: NSE/BSE + vernacular news
+
+🔗 AI (NLP) + TA indicators for stronger signals
+
+📊 Backtested alerts with accuracy metrics
+
+💡 Explainable AI (why an alert was triggered)
+
+💰 Freemium model + broker integration
+
+🌐 Open-source core for transparency
+
+Slide 5 – Positioning Statement
+
+“The only India-first AI platform that combines real-time news, NLP sentiment, and technical chart analysis into actionable, backtested trading alerts — built for both retail traders and institutions.”
+
+Slide 6 – Competitive Quadrant (Visual Idea)
+
+X-axis: India Focus
+
+Y-axis: AI Depth
+
+Bottom-left: Sentifi (Global + shallow AI)
+
+Bottom-right: AlphaSense (Global + deep AI)
+
+Top-left: Accern (Strong AI, but global/institutional)
+
+Top-right: News Impact Trader AI (India-first + deep AI + TA integration)

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: news-impact-api
+spec:
+  type: LoadBalancer
+  selector:
+    app: news-impact-api
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000

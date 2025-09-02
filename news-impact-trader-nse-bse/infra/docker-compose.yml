@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile.api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../backend:/app/backend

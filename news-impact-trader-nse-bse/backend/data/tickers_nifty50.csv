@@ -1,0 +1,50 @@
+company,nse,bse,sector
+Reliance Industries,RELIANCE.NS,500325.BO,Energy & Petrochem
+Tata Consultancy Services,TCS.NS,532540.BO,IT
+Infosys,INFY.NS,500209.BO,IT
+HDFC Bank,HDFCBANK.NS,500180.BO,Banking
+ICICI Bank,ICICIBANK.NS,532174.BO,Banking
+State Bank of India,SBIN.NS,500112.BO,Banking
+Kotak Mahindra Bank,KOTAKBANK.NS,500247.BO,Banking
+Axis Bank,AXISBANK.NS,532215.BO,Banking
+Bajaj Finance,BAJFINANCE.NS,500034.BO,Financials
+Bajaj Finserv,BAJAJFINSV.NS,532978.BO,Financials
+ITC,ITC.NS,500875.BO,FMCG
+Hindustan Unilever,HINDUNILVR.NS,500696.BO,FMCG
+Larsen & Toubro,LT.NS,500510.BO,Engineering
+Bharti Airtel,BHARTIARTL.NS,532454.Bo,Telecom
+Maruti Suzuki,MARUTI.NS,532500.BO,Auto
+Tata Motors,TATAMOTORS.NS,500570.BO,Auto
+Mahindra & Mahindra,M&M.NS,500520.BO,Auto
+HCL Technologies,HCLTECH.NS,532281.BO,IT
+Wipro,WIPRO.NS,507685.BO,IT
+Tech Mahindra,TECHM.NS,532755.BO,IT
+Sun Pharma,SUNPHARMA.NS,524715.BO,Pharma
+Dr Reddy's Laboratories,DRREDDY.NS,500124.BO,Pharma
+Cipla,CIPLA.NS,500087.BO,Pharma
+Divi's Laboratories,DIVISLAB.NS,532488.BO,Pharma
+Nestle India,NESTLEIND.NS,500790.BO,FMCG
+Britannia Industries,BRITANNIA.NS,500825.BO,FMCG
+Asian Paints,ASIANPAINT.NS,500820.BO,Consumer
+Titan Company,TITAN.NS,500114.BO,Consumer
+UltraTech Cement,ULTRACEMCO.NS,532538.BO,Cement
+Grasim Industries,GRASIM.NS,500300.BO,Cement & Textiles
+JSW Steel,JSWSTEEL.NS,500228.BO,Metals
+Tata Steel,TATASTEEL.NS,500470.BO,Metals
+Hindalco Industries,HINDALCO.NS,500440.BO,Metals
+Coal India,COALINDIA.NS,533278.BO,Mining
+ONGC,ONGC.NS,500312.BO,Energy
+Power Grid Corp,POWERGRID.NS,532898.BO,Utilities
+NTPC,NTPC.NS,532555.BO,Utilities
+IndusInd Bank,INDUSINDBK.NS,532187.BO,Banking
+SBI Life Insurance,SBILIFE.NS,540719.BO,Insurance
+HDFC Life,HDFCLIFE.NS,540777.BO,Insurance
+Adani Ports,ADANIPORTS.NS,532921.BO,Ports & Logistics
+Adani Enterprises,ADANIENT.NS,512599.BO,Conglomerate
+Eicher Motors,EICHERMOT.NS,505200.BO,Auto
+Hero MotoCorp,HEROMOTOCO.NS,500182.BO,Auto
+Bajaj Auto,BAJAJ-AUTO.NS,532977.BO,Auto
+Tata Consumer Products,TATACONSUM.NS,500800.BO,FMCG
+UPL,UPL.NS,512070.BO,Chemicals
+Apollo Hospitals,APOLLOHOSP.NS,508869.BO,Healthcare
+Oil & Natural Gas Corp,ONGC.NS,500312.BO,Energy

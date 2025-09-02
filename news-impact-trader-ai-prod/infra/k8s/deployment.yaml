@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: news-impact-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: news-impact-api
+  template:
+    metadata:
+      labels:
+        app: news-impact-api
+    spec:
+      containers:
+        - name: api
+          image: yourrepo/news-impact-api:latest
+          ports:
+            - containerPort: 8000
+          env:
+            - name: DATABASE_URL
+              value: postgresql://postgres:postgres@postgres:5432/newsimpact

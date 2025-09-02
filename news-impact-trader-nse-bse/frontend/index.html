@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>News Impact Trader AI</title>
+  <style>
+    body{font-family:system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;background:#0b0f14;color:#e6edf3;margin:0}
+    header{padding:16px 20px;border-bottom:1px solid #1f2630}
+    .wrap{padding:20px;max-width:1100px;margin:0 auto}
+    .card{background:#0f141a;border:1px solid #1f2630;border-radius:12px;padding:16px;margin-bottom:16px}
+    .grid{display:grid;grid-template-columns:2fr 1fr;gap:16px}
+    code{background:#0b0f14;border:1px solid #1f2630;padding:2px 6px;border-radius:6px}
+    .badge{display:inline-block;border:1px solid #2a3542;border-radius:999px;padding:4px 10px;margin-right:6px}
+    .ticker{font-weight:700}
+  </style>
+</head>
+<body>
+  <header><strong>News Impact Trader AI</strong> – Open-Source MVP</header>
+  <div class="wrap">
+    <div class="grid">
+      <div class="card">
+        <h3>Alerts</h3>
+        <div id="alerts">Loading...</div>
+      </div>
+      <div class="card">
+        <h3>How to run</h3>
+        <p>Start API: <code>uvicorn backend.app:app --reload --port 8000</code></p>
+        <p>Try: <code>curl http://localhost:8000/alerts?tickers=RELIANCE.NS,HDFCBANK.NS,INFY.NS</code></p>
+      </div>
+    </div>
+  </div>
+  <script>
+    async function load() {
+      try{
+        const res = await fetch('http://localhost:8000/alerts?tickers=RELIANCE.NS,HDFCBANK.NS,INFY.NS');
+        const data = await res.json();
+        const el = document.getElementById('alerts');
+        if (!Array.isArray(data) || data.length===0){
+          el.innerHTML = 'No alerts (yet). Try later or tweak thresholds.';
+          return;
+        }
+        el.innerHTML = data.map(a => `
+          <div class="card">
+            <div class="badge">${a.bias}</div>
+            <span class="ticker">${a.ticker}</span>
+            <div>Impact <strong>${a.impact}</strong> • Sent ${a.sentiment.toFixed(2)}</div>
+            <div>Close ${a.indicators.Close.toFixed(2)} • EMA20 ${a.indicators.EMA20.toFixed(2)} • RSI ${a.indicators.RSI14.toFixed(1)}</div>
+            <details><summary>Headlines</summary>
+              <ul>${a.headlines.map(h=>`<li>${h.source}: <a href="${h.url}" target="_blank">${h.title}</a> (sent ${h.sentiment})</li>`).join('')}</ul>
+            </details>
+          </div>
+        `).join('');
+      }catch(e){
+        document.getElementById('alerts').innerHTML = 'API not reachable. Start it locally.';
+      }
+    }
+    load();
+  </script>
+</body>
+</html>
