@@ -1,0 +1,19 @@
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
+@app.get("/alerts")
+def get_alerts(tickers: str = Query(..., description="Comma-separated tickers")):
+    tickers_list = tickers.split(",")
+    return {
+        "tickers": tickers_list,
+        "alerts": [
+            {"ticker": "RELIANCE.NS", "sentiment": "positive", "impact": 0.82},
+            {"ticker": "HDFCBANK.NS", "sentiment": "neutral", "impact": 0.45},
+        ]
+    }
+
