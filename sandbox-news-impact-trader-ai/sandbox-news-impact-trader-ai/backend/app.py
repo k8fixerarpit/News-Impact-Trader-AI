@@ -50,5 +50,5 @@ def get_alerts(tickers: str = Query(..., description="Comma-separated tickers"))
 
         except Exception as e:
             results.append({"ticker": ticker, "error": str(e)})
-
     return {"alerts": results}
+
